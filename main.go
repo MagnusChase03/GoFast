@@ -130,7 +130,7 @@ func DownloadChunks(url string, chunks []DownloadChunk, output string) error {
             }
             defer resp.Body.Close();
             if resp.StatusCode != http.StatusPartialContent {
-                errChan<-fmt.Errorf("Error: Unsuccessful status code form %s (%d).", url, resp.StatusCode);
+                errChan<-fmt.Errorf("Error: Unsuccessful status code from %s (%d).", url, resp.StatusCode);
                 return;
             }
 
