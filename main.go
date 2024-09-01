@@ -1,12 +1,12 @@
 package main
 
 import (
-	"fmt"
-	"net/http"
-	"os"
-	"strconv"
-	"sync"
-	"io"
+    "fmt"
+    "net/http"
+    "os"
+    "strconv"
+    "sync"
+    "io"
 )
 
 type DownloadChunk struct {
