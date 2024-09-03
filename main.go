@@ -172,7 +172,7 @@ func main() {
 
     downloadSize, err := GetFileSize(os.Args[1]);
     if err != nil {
-        fmt.Fprintf(os.Stderr, "%v\n", err);
+        fmt.Fprintf(os.Stderr, "Error: Failed to get download size. %v\n", err);
         return;
     }
     fmt.Printf("Log: Download size: %d bytes.\n", downloadSize);

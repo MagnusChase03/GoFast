@@ -6,6 +6,7 @@
 
 ```
 $ go build main.go
+$ strip main
 $ sudo mv main /usr/bin/gofast
 ```
 
